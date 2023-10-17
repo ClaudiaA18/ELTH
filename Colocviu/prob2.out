@@ -1,0 +1,154 @@
+
+**** 05/26/22 10:35:05 *********** Evaluation PSpice (Nov 1999) **************
+
+ Circuit de curent continuu
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+*n=14 Girnita Alexandra-Claudia
+
+R 1 4 10
+L1 2 3 14
+C1 3 4 0.071
+C2 4 5 0.071
+
+V1 0 1 AC 20 45
+V2 2 1 AC 14.1 0
+V3 5 1 AC 20 135
+
+I1 3 0 AC 1.41 0
+
+.AC LIN 1 0.159 0.159
+.PRINT AC IR(R)  II(R) IP(R) IM(R)
+.PRINT AC IR(L1) II(L1) IP(L1) IM(L1) IR(C1) II(C1) IP(C1) IM(C1)
+.PRINT AC IR(C2)  II(C2) IP(C2) IM(C2) VR(0,1)  VI(0,1) VP(0,1) VM(0,1)
+.END
+
+**** 05/26/22 10:35:05 *********** Evaluation PSpice (Nov 1999) **************
+
+ Circuit de curent continuu
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(    1)    0.0000  (    2)    0.0000  (    3)    0.0000  (    4)    0.0000      
+
+(    5)    0.0000  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V1           0.000E+00
+    V2           0.000E+00
+    V3           0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+**** 05/26/22 10:35:05 *********** Evaluation PSpice (Nov 1999) **************
+
+ Circuit de curent continuu
+
+
+ ****     AC ANALYSIS                      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+  FREQ        IR(R)       II(R)       IP(R)       IM(R)       
+
+
+   1.590E-01  -1.409E+00   1.930E+00   1.261E+02   2.390E+00
+
+**** 05/26/22 10:35:05 *********** Evaluation PSpice (Nov 1999) **************
+
+ Circuit de curent continuu
+
+
+ ****     AC ANALYSIS                      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+  FREQ        IR(L1)      II(L1)      IP(L1)      IM(L1)      IR(C1)      
+
+
+   1.590E-01   5.191E+00   7.288E-02   8.043E-01   5.192E+00   3.781E+00
+
+**** 05/26/22 10:35:05 *********** Evaluation PSpice (Nov 1999) **************
+
+ Circuit de curent continuu
+
+
+ ****     AC ANALYSIS                      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+  FREQ        II(C1)      IP(C1)      IM(C1)      
+
+
+   1.590E-01   7.288E-02   1.104E+00   3.782E+00
+
+**** 05/26/22 10:35:05 *********** Evaluation PSpice (Nov 1999) **************
+
+ Circuit de curent continuu
+
+
+ ****     AC ANALYSIS                      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+  FREQ        IR(C2)      II(C2)      IP(C2)      IM(C2)      VR(0,1)     
+
+
+   1.590E-01   2.372E+00   2.003E+00   4.018E+01   3.104E+00   1.414E+01
+
+**** 05/26/22 10:35:05 *********** Evaluation PSpice (Nov 1999) **************
+
+ Circuit de curent continuu
+
+
+ ****     AC ANALYSIS                      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+  FREQ        VI(0,1)     VP(0,1)     VM(0,1)     
+
+
+   1.590E-01   1.414E+01   4.500E+01   2.000E+01
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME            0.00
+

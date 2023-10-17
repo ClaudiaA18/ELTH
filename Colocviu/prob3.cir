@@ -1,0 +1,15 @@
+Circuit electric în regim tranzitoriu
+*n=14 Girnita Alexandra-Claudia
+
+R1 0 2 10 ic=2
+L 2 3 14 ic=-2
+V2 0 3 10
+V1 0 1 100
+C 0 2 0.071 ic=0
+R2 1 2 10 ic=-2
+
+*.dc V2 10 10 1
+*.print dc I(R1) I(L) I(C) I(R2)
+.TRAN 1 10 uic
+.PROBE
+.end

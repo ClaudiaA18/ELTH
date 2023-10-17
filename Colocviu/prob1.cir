@@ -1,0 +1,17 @@
+Circuit de curent continuu
+*n=14 Girnita Alexandra-Claudia
+
+R1 1 2 10
+V1 5 0 40
+H1 1 3 V1 14
+R2 5 4 10
+R3 4 3 10
+R4 0 6 10
+G1 0 6 1 2 0.071
+R5 6 3 10
+I 2 3 14
+
+.DC V1 40 40 1
+.PRINT DC I(R1) I(R2) I(R3) I(R4) I(R5) V(0,1)
+.END
+
